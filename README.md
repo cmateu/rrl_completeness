@@ -1,8 +1,8 @@
 #  RRL completeness utils
 
-This is an utility library to read, plot and recompute the RR Lyrae completeness maps presented in [Mateu et al. 2020](https://arxiv.org/abs/2006.09416).
+This is an utility library to read, plot and recompute the RR Lyrae completeness maps presented in [Mateu et al. 2020 (M20)](https://arxiv.org/abs/2006.09416).
 
-Gaia DR2 (VC+SOS), Pan-STARRS-1 and ASAS-SN-II completeness maps presented in M20 are available in csv format in the *maps* directory.
+Gaia DR2 (VC+SOS), Pan-STARRS-1 and ASAS-SN-II completeness maps presented in M20 are available in csv format in the [maps](https://github.com/cmateu/rrl_completeness/tree/master/maps) directory.
 
 ![see plot here](maps/VCSOS_final_completeness.png?raw=true "Gaia DR2 (VC+SOS) completeness map")
 
