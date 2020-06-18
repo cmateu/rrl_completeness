@@ -1,8 +1,6 @@
 import numpy as np
 import healpy as hp
 import scipy
-#import pandas as pd
-import seaborn as sns
 import astropy.table
 import astropy.coordinates as ac
 from astropy import units as u
