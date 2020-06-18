@@ -3,4 +3,5 @@ scipy
 astropy
 healpy
 pandas
+seaborn
 matplotlib
