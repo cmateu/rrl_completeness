@@ -28,7 +28,7 @@ In a terminal, run the following command:
 
     sudo python setup.py install
 
-and source your .cshrc
+and source your .cshrc or .bashrc
 
 If you do not have root access, you can install in the custom directory path_to_dir.
 First, add the directory's path path_to_dir and path_to_dir/lib/python2.7/site-packages/
