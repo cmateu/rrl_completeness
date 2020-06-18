@@ -185,6 +185,13 @@ def compute_completeness_map(sc1, sc2, nside=2**2, tol=3.*u.arcsec, verbose=Fals
     tol : float with units
         angular tolerance to compute sky-match between the two surveys
     verbose : bool
+
+    Returns:
+    ========
+
+    C1_hpx, C2_hpx : healpix completeness maps for sc1 and sc2, respectively
+
+
     '''
     
     idx,sep2d,sep3d=sc1.match_to_catalog_sky(sc2)

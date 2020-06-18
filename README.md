@@ -11,4 +11,4 @@ The Jupyter notebook *map_computing_examples.py* provides examples on how to com
 
 **REQUIREMENTS**
 
-- Python modules required are ASTROPY, HEALPY, NUMPY, SCIPY. MATPLOTLIB is needed for plotting utilities.
+- Python modules required are NUMPY, SCIPY, ASTROPY AND HEALPY. MATPLOTLIB is needed for plotting utilities.
