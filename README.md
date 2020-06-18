@@ -9,8 +9,8 @@ Gaia DR2 (VC+SOS), Pan-STARRS-1 and ASAS-SN-II completeness maps presented in M2
 ----------
 ### EXAMPLES
 
-- The Jupyter notebook *map_computing_examples.py* provides examples on how to compute 2D maps and completeness in the line of sight for a given catalogue. 
-- The Jupyter notebook  *map_plotting_examples.py* provide examples on how to plot the different precomputed maps published in [Mateu et al. 2020](https://arxiv.org/abs/2006.09416).
+- The Jupyter notebook  [map_plotting_examples.py](https://github.com/cmateu/rrl_completeness/blob/master/examples/map_plotting_examples.ipynb) shows how to plot the different precomputed maps published in [Mateu et al. 2020](https://arxiv.org/abs/2006.09416).
+- The Jupyter notebook [map_computing_examples.py](https://github.com/cmateu/rrl_completeness/blob/master/examples/map_computing_examples.ipynb) shows how to compute 2D maps and completeness in the line of sight for a given catalogue.
 
 ----------
 
