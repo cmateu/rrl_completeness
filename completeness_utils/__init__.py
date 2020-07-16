@@ -108,12 +108,12 @@ def query_3d_map(C, coo, D=None, verbose=False, force_nearest=True):
     if D is not None: 
         if verbose: print(f"Selecting D={D.value}")
         mask_D = (C.D_o<=D.value) & (D.value<=C.D_f)
-        if mask_D.any(): 
+        if (mask_index & mask_D).any(): 
             return C[mask_index & mask_D]
         else: 
             if force_nearest:
-               if (D.value<C.D_o): return C[mask_index].iloc[0]
-               if (D.value>C.D_f): return C[mask_index].iloc[-1]
+               if (D.value<np.min(C[mask_index].D_o)): return C[mask_index].iloc[0]
+               if (D.value>np.max(C[mask_index].D_f)): return C[mask_index].iloc[-1]
             else:   
               print(f"D outside valid distance range [{np.min(C.D_o)},{np.max(C.D_f)}] for hpix")
     else:
