@@ -106,7 +106,7 @@ def query_3d_map(C, coo, D=None, verbose=False, force_nearest=True):
     
     # distance mask
     if D is not None: 
-        print(f"Selecting D={D.value}")
+        if verbose: print(f"Selecting D={D.value}")
         mask_D = (C.D_o<=D.value) & (D.value<=C.D_f)
         if mask_D.any(): 
             return C[mask_index & mask_D]
