@@ -49,7 +49,7 @@ def query_2d_map(C, coo):
 
     return C[C.hpix == indices]
         
-def query_3d_map(C, coo, D=None):
+def query_3d_map(C, coo, D=None, verbose=False, force_nearest=True):
 
     '''
     Query pre-computed 3D completeness tables from Mateu2020 at given coordinates. 
@@ -111,10 +111,13 @@ def query_3d_map(C, coo, D=None):
         if mask_D.any(): 
             return C[mask_index & mask_D]
         else: 
-            print(f"D outside valid distance range [{np.min(C.D_o)},{np.max(C.D_f)}] for hpix")
-            return C[mask_index]
+            if force_nearest:
+               if (D.value<C.D_o): return C[mask_index].iloc[0]
+               if (D.value>C.D_f): return C[mask_index].iloc[-1]
+            else:   
+              print(f"D outside valid distance range [{np.min(C.D_o)},{np.max(C.D_f)}] for hpix")
     else:
-        print("No D selected")
+        if verbose: print("No D selected")
         return C[mask_index]
         
 
