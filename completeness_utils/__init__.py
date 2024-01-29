@@ -206,8 +206,8 @@ def compute_completeness_map(sc1, sc2, nside=2**2, tol=3.*u.arcsec, verbose=Fals
     s1x2_hpx=cat2hpx(sc1x2.ra,sc1x2.dec, nside, radec=True)
 
     #Surveys's completeness 
-    C1_hpx=100.*s1x2_hpx/s2_hpx.astype(np.float)
-    C2_hpx=100.*s1x2_hpx/s1_hpx.astype(np.float)
+    C1_hpx=100.*s1x2_hpx/s2_hpx.astype(float)
+    C2_hpx=100.*s1x2_hpx/s1_hpx.astype(float)
 
     return C1_hpx, C2_hpx
   
