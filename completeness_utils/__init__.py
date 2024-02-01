@@ -332,7 +332,7 @@ def completeness_los(los_coo, cat1_coo, cat2_coo, fill_with_ecliptic_opposite=Fa
         #Select bin edges every Nmin stars in total
         r_bin_edges =  clos_D_sort[::Nmin]
         #If fewer than 1/2Nmin stars in last bin, move edge to merge with previous bin into a single one
-        if ~(clos_D_sort.size % Nmin > np.int(0.5*Nmin)): r_bin_edges[-1]=np.max(sclos1.distance.kpc)     
+        if ~(clos_D_sort.size % Nmin > int(0.5*Nmin)): r_bin_edges[-1]=np.max(sclos1.distance.kpc)     
         else: r_bin_edges = np.append(r_bin_edges,sclos1.distance.kpc.max())  
 
     #Count stars in (irregularly spaced) r bins  
