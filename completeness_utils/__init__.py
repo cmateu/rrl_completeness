@@ -167,7 +167,7 @@ def cat2hpx(lon, lat, nside, radec=True):
     idx, counts = np.unique(indices, return_counts=True)
 
     # fill the fullsky map
-    hpx_map = np.zeros(npix, dtype=int)
+    hpx_map = np.zeros(npix, dtype=np.int64)
     hpx_map[idx] = counts
 
     return hpx_map
