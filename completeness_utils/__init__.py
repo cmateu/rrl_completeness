@@ -298,7 +298,7 @@ def completeness_los(los_coo, cat1_coo, cat2_coo, fill_with_ecliptic_opposite=Fa
       sco = ac.SkyCoord(sc_n.galactic.l, sc_n.galactic.b, frame="galactic")
       if verbose: 
         print("Field outside PS1 footprint -> getting estimate from symmetric field w.r.t ecliptic plane") 
-        print(f'{lon},{lat} -> {sco.l},{sco.b}')
+        #print(f'{lon},{lat} -> {sco.l},{sco.b}')
     
     #Keep catalogue stars in selected l.o.s
     mlos = cat1_coo.separation(sco)<=los_size
