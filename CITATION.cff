@@ -1,0 +1,12 @@
+cff-version: 2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Mateu
+    given-names: Cecilia
+    orcid: https://orcid.org/0000-0002-6330-2394
+title: "RRL COMPLETENESS MAPS"
+version: 2.0
+identifiers:
+  - type: doi
+    value: 10./zenodo.
+date-released: 2022-03-18
