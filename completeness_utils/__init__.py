@@ -92,7 +92,8 @@ def query_3d_map(C, coo, D=None, verbose=False, force_nearest=True):
         '''
     
     #Healpix indices
-    npix = np.unique(C.hpix).size
+    #npix = np.unique(C.hpix).size
+    npix = np.max(C.hpix)+1
     nside = hp.npix2nside(npix)
 
     # convert to theta, phi
